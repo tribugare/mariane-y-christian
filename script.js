@@ -28,3 +28,17 @@ const listaNav = document.getElementById("lista-nav");
 botonMenu.addEventListener("click", function() {
   listaNav.classList.toggle("abierto");
 });
+
+// RSVP por WhatsApp
+const formRSVP = document.getElementById("form-rsvp");
+
+formRSVP.addEventListener("submit", function(evento) {
+  evento.preventDefault();
+
+  const nombre = document.getElementById("nombre-invitado").value;
+  const numeroMariane = "526644797002";
+  const mensaje = `Hola, soy ${nombre} y confirmo mi asistencia a la boda de Mariane y Christian 🎉`;
+  const mensajeCodificado = encodeURIComponent(mensaje);
+
+  window.open(`https://wa.me/${numeroMariane}?text=${mensajeCodificado}`, "_blank");
+});
