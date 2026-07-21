@@ -41,4 +41,8 @@ formRSVP.addEventListener("submit", function(evento) {
   const mensajeCodificado = encodeURIComponent(mensaje);
 
   window.open(`https://wa.me/${numeroMariane}?text=${mensajeCodificado}`, "_blank");
+
+  formRSVP.innerHTML = `
+    <p class="mensaje-gracias">¡Gracias, ${nombre}! Te hemos abierto WhatsApp para confirmar tu asistencia.</p>
+  `;
 });

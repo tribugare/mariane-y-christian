@@ -409,3 +409,9 @@ footer {
   cursor: pointer;
   font-family: Georgia, serif;
 }
+
+.mensaje-gracias {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 0;
+}
