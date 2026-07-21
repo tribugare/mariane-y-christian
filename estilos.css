@@ -102,9 +102,6 @@ nav a {
   color: white;
   text-align: center;
   padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #countdown .etiqueta-countdown {
@@ -112,6 +109,13 @@ nav a {
   letter-spacing: 3px;
   font-size: 14px;
   margin-bottom: 20px;
+}
+
+.fila-countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .cajas-tiempo {
@@ -141,17 +145,25 @@ nav a {
 #detalles h2 {
   color: var(--terracota);
   margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .columnas-detalle {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 30px;
   flex-wrap: wrap;
 }
 
 .columna-detalle {
   max-width: 220px;
+  padding: 0 15px;
+}
+
+.columna-detalle + .columna-detalle {
+  border-left: 1px dotted var(--terracota);
 }
 
 .titulo-detalle {
@@ -169,27 +181,68 @@ nav a {
   text-decoration-color: var(--terracota);
 }
 
+.divisor-seccion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 20px 40px;
+}
+
+.divisor-seccion .linea {
+  width: 60px;
+  height: 1px;
+  background-color: var(--terracota);
+}
+
+.divisor-icono {
+  width: 16px;
+  height: 16px;
+  color: var(--terracota);
+}
+
 #itinerario {
   text-align: center;
-  padding: 60px 20px;
+  padding: 0 20px 60px;
 }
 
 #itinerario h2 {
   color: var(--terracota);
   margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .momentos {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .momento {
   max-width: 140px;
   text-align: center;
+}
+
+.momento-divisor {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding-top: 28px;
+}
+
+.linea-punteada {
+  width: 20px;
+  height: 0;
+  border-top: 1px dotted var(--terracota);
+}
+
+.corazon-mini {
+  width: 12px;
+  height: 12px;
+  color: var(--terracota);
 }
 
 .hora-momento,
@@ -230,6 +283,7 @@ nav a {
   min-width: 280px;
   padding: 50px 30px;
   text-align: center;
+  position: relative;
 }
 
 .caja-confirmacion {
@@ -244,6 +298,8 @@ nav a {
 .caja-confirmacion h2,
 .caja-regalo h2 {
   margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .caja-regalo h2 {
@@ -296,6 +352,12 @@ footer {
 
   nav ul.abierto {
     display: flex;
+  }
+
+  .columna-detalle + .columna-detalle {
+    border-left: none;
+    border-top: 1px dotted var(--terracota);
+    padding-top: 20px;
   }
 
 }
