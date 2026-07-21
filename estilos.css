@@ -10,6 +10,7 @@ body {
   color: var(--texto-oscuro);
   font-family: Georgia, serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -330,6 +331,34 @@ nav a {
   border-radius: 4px;
 }
 
+.form-rsvp {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 280px;
+  margin: 20px auto 0;
+}
+
+.form-rsvp input {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 4px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+}
+
+.form-rsvp .boton {
+  border: none;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+.mensaje-gracias {
+  font-size: 16px;
+  font-style: italic;
+  margin: 20px 0 0;
+}
+
 footer {
   text-align: center;
   padding: 50px 20px;
@@ -386,32 +415,4 @@ footer {
     border-left: 1px dotted var(--terracota);
   }
 
-}
-
-.form-rsvp {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 280px;
-  margin: 20px auto 0;
-}
-
-.form-rsvp input {
-  padding: 12px 14px;
-  border: none;
-  border-radius: 4px;
-  font-family: Georgia, serif;
-  font-size: 15px;
-}
-
-.form-rsvp .boton {
-  border: none;
-  cursor: pointer;
-  font-family: Georgia, serif;
-}
-
-.mensaje-gracias {
-  font-size: 16px;
-  font-style: italic;
-  margin: 20px 0 0;
 }
