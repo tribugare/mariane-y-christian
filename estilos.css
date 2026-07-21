@@ -286,6 +286,22 @@ nav a {
   position: relative;
 }
 
+.caja-confirmacion::before,
+.caja-regalo::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid var(--terracota);
+  pointer-events: none;
+}
+
+.caja-confirmacion::before {
+  border-color: rgba(255,255,255,0.5);
+}
+
 .caja-confirmacion {
   background-color: var(--terracota);
   color: white;
@@ -337,6 +353,19 @@ footer {
   #hero h1 {
     font-size: 32px;
   }
+
+  .momento-divisor {
+  padding-top: 0;
+  flex-direction: column;
+  height: 40px;
+}
+
+.linea-punteada {
+  width: 0;
+  height: 16px;
+  border-top: none;
+  border-left: 1px dotted var(--terracota);
+}
 
   #boton-menu {
     display: block;
