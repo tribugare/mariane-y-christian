@@ -29,19 +29,60 @@
 </nav>
 
   <!-- 2. HERO -->
-  <section id="hero">
+<section id="hero">
 
-    <p class="eyebrow">Nuestra boda</p>
+  <p class="eyebrow">Nuestra boda</p>
 
-    <h1>Mariane &amp; Christian</h1>
+  <h1>Mariane &amp; Christian</h1>
 
-    <p class="mensaje">
-      Queremos que seas parte de este capítulo tan importante en nuestras vidas.
-    </p>
+  <p class="mensaje">
+    Queremos que seas parte de este capítulo tan importante en nuestras vidas.
+  </p>
 
-    <p class="frase-cursiva">¡Nos encantaría celebrar contigo!</p>
+  <p class="frase-cursiva">¡Nos encantaría celebrar contigo!</p>
+
+  <div class="marco-foto">
     <img src="imagenes/parejamyc.jpeg" alt="Mariane y Christian">
-  </section>
+
+    <svg class="marco-decorado" viewBox="0 0 300 400" preserveAspectRatio="none">
+      <defs>
+        <g id="flor">
+          <circle cx="0" cy="-7" r="5"/>
+          <circle cx="6" cy="-2" r="5"/>
+          <circle cx="4" cy="6" r="5"/>
+          <circle cx="-4" cy="6" r="5"/>
+          <circle cx="-6" cy="-2" r="5"/>
+          <circle cx="0" cy="0" r="2" class="centro"/>
+        </g>
+      </defs>
+
+      <!-- arco superior -->
+      <use href="#flor" transform="translate(10,150)"/>
+      <use href="#flor" transform="translate(29,80) scale(0.9)"/>
+      <use href="#flor" transform="translate(80,29) scale(0.9)"/>
+      <use href="#flor" transform="translate(150,10) scale(0.9)"/>
+      <use href="#flor" transform="translate(220,29) scale(0.9)"/>
+      <use href="#flor" transform="translate(271,80) scale(0.9)"/>
+      <use href="#flor" transform="translate(290,150)"/>
+
+      <!-- lado izquierdo -->
+      <use href="#flor" transform="translate(10,220)"/>
+      <use href="#flor" transform="translate(10,290)"/>
+      <use href="#flor" transform="translate(10,360)"/>
+
+      <!-- lado derecho -->
+      <use href="#flor" transform="translate(290,220)"/>
+      <use href="#flor" transform="translate(290,290)"/>
+      <use href="#flor" transform="translate(290,360)"/>
+
+      <!-- abajo -->
+      <use href="#flor" transform="translate(80,390)"/>
+      <use href="#flor" transform="translate(150,390)"/>
+      <use href="#flor" transform="translate(220,390)"/>
+    </svg>
+  </div>
+
+</section>
 
   <!-- 3. COUNTDOWN -->
   <section id="countdown">
