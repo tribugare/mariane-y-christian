@@ -161,8 +161,12 @@ nav a {
   text-align: center;
 }
 
-.momento .icono-temporal {
-  font-size: 32px;
+.momentos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
 }
 
 .nombre-momento {
@@ -291,4 +295,21 @@ footer {
     display: flex;
   }
 
+}
+
+.icono-circulo {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--terracota);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  color: var(--terracota);
+}
+
+.icono-circulo svg {
+  width: 24px;
+  height: 24px;
 }
