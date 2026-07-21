@@ -118,6 +118,20 @@ nav a {
   gap: 20px;
 }
 
+.rama {
+  width: 70px;
+  height: auto;
+  opacity: 0.9;
+}
+
+.rama-izquierda {
+  transform: rotate(-8deg);
+}
+
+.rama-derecha {
+  transform: scaleX(-1) rotate(-8deg);
+}
+
 .cajas-tiempo {
   display: flex;
   justify-content: center;
@@ -186,7 +200,7 @@ nav a {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 0 20px 40px;
+  padding: 40px 20px;
 }
 
 .divisor-seccion .linea {
@@ -203,7 +217,7 @@ nav a {
 
 #itinerario {
   text-align: center;
-  padding: 0 20px 60px;
+  padding: 0 20px 20px;
 }
 
 #itinerario h2 {
@@ -354,19 +368,6 @@ footer {
     font-size: 32px;
   }
 
-  .momento-divisor {
-  padding-top: 0;
-  flex-direction: column;
-  height: 40px;
-}
-
-.linea-punteada {
-  width: 0;
-  height: 16px;
-  border-top: none;
-  border-left: 1px dotted var(--terracota);
-}
-
   #boton-menu {
     display: block;
   }
@@ -387,6 +388,23 @@ footer {
     border-left: none;
     border-top: 1px dotted var(--terracota);
     padding-top: 20px;
+  }
+
+  .rama {
+    display: none;
+  }
+
+  .momento-divisor {
+    padding-top: 0;
+    flex-direction: column;
+    height: 40px;
+  }
+
+  .linea-punteada {
+    width: 0;
+    height: 16px;
+    border-top: none;
+    border-left: 1px dotted var(--terracota);
   }
 
 }
