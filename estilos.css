@@ -97,17 +97,6 @@ nav a {
   pointer-events: none;
 }
 
-.marco-decorado #flor circle {
-  fill: none;
-  stroke: var(--terracota);
-  stroke-width: 1.5;
-}
-
-.marco-decorado #flor .centro {
-  fill: var(--terracota);
-  stroke: none;
-}
-
 #countdown {
   background-color: var(--terracota-oscuro);
   color: white;
