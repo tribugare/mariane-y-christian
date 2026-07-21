@@ -231,3 +231,63 @@ footer {
   text-decoration: underline;
   text-decoration-color: var(--terracota);
 }
+
+@media (max-width: 600px) {
+
+  #hero h1 {
+    font-size: 32px;
+  }
+
+}
+
+.icono-temporal,
+.titulo-detalle,
+.nombre-momento {
+  margin: 4px 0;
+}
+
+@media (max-width: 600px) {
+
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  nav ul {
+    gap: 14px;
+    font-size: 12px;
+  }
+
+}
+
+#boton-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+
+  #hero h1 {
+    font-size: 32px;
+  }
+
+  #boton-menu {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  nav ul.abierto {
+    display: flex;
+  }
+
+}

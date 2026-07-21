@@ -20,3 +20,11 @@ function actualizarCountdown() {
 
 // 3. Correr la función cada segundo
 setInterval(actualizarCountdown, 1000);
+
+// Menú hamburguesa
+const botonMenu = document.getElementById("boton-menu");
+const listaNav = document.getElementById("lista-nav");
+
+botonMenu.addEventListener("click", function() {
+  listaNav.classList.toggle("abierto");
+});
