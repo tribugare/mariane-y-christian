@@ -33,6 +33,15 @@ nav a {
   letter-spacing: 1px;
 }
 
+#boton-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 #hero {
   text-align: center;
   padding: 60px 20px;
@@ -118,16 +127,12 @@ nav a {
 .columnas-detalle {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   flex-wrap: wrap;
 }
 
 .columna-detalle {
   max-width: 220px;
-}
-
-.icono-temporal {
-  font-size: 32px;
 }
 
 .titulo-detalle {
@@ -137,6 +142,12 @@ nav a {
   font-weight: bold;
   font-size: 14px;
   margin: 10px 0;
+}
+
+.link-mapa {
+  color: var(--texto-oscuro);
+  text-decoration: underline;
+  text-decoration-color: var(--terracota);
 }
 
 #itinerario {
@@ -152,6 +163,7 @@ nav a {
 .momentos {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 40px;
   flex-wrap: wrap;
 }
@@ -161,17 +173,31 @@ nav a {
   text-align: center;
 }
 
-.momentos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+.hora-momento,
+.nombre-momento {
+  margin: 4px 0;
 }
 
 .nombre-momento {
   font-size: 14px;
   font-weight: bold;
+}
+
+.icono-circulo {
+  width: 56px;
+  height: 56px;
+  border: 1px solid var(--terracota);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  color: var(--terracota);
+}
+
+.icono-circulo svg {
+  width: 24px;
+  height: 24px;
 }
 
 #confirmacion {
@@ -231,48 +257,6 @@ footer {
   font-size: 20px;
 }
 
-.link-mapa {
-  color: var(--texto-oscuro);
-  text-decoration: underline;
-  text-decoration-color: var(--terracota);
-}
-
-@media (max-width: 600px) {
-
-  #hero h1 {
-    font-size: 32px;
-  }
-
-}
-
-.icono-temporal,
-.titulo-detalle,
-.nombre-momento {
-  margin: 4px 0;
-}
-
-@media (max-width: 600px) {
-
-  #hero h1 {
-    font-size: 32px;
-  }
-
-  nav ul {
-    gap: 14px;
-    font-size: 12px;
-  }
-
-}
-
-#boton-menu {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-}
-
 @media (max-width: 600px) {
 
   #hero h1 {
@@ -295,21 +279,4 @@ footer {
     display: flex;
   }
 
-}
-
-.icono-circulo {
-  width: 56px;
-  height: 56px;
-  border: 1px solid var(--terracota);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 10px;
-  color: var(--terracota);
-}
-
-.icono-circulo svg {
-  width: 24px;
-  height: 24px;
 }
