@@ -1,0 +1,233 @@
+:root {
+  --terracota: #b85c34;
+  --terracota-oscuro: #8f4526;
+  --crema: #f3e9dc;
+  --texto-oscuro: #4a2c1a;
+}
+
+body {
+  background-color: var(--crema);
+  color: var(--texto-oscuro);
+  font-family: Georgia, serif;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--terracota);
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+#hero {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#hero .eyebrow {
+  color: var(--terracota);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#hero h1 {
+  font-size: 48px;
+  margin: 10px 0 20px;
+}
+
+#hero .mensaje,
+#hero .frase-cursiva {
+  max-width: 500px;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+#hero .frase-cursiva {
+  color: var(--terracota);
+  font-style: italic;
+}
+
+#hero img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+#countdown {
+  background-color: var(--terracota-oscuro);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#countdown .etiqueta-countdown {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.cajas-tiempo {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.caja-tiempo .numero {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.caja-tiempo .unidad {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+#detalles {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#detalles h2 {
+  color: var(--terracota);
+  margin-bottom: 40px;
+}
+
+.columnas-detalle {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.columna-detalle {
+  max-width: 220px;
+}
+
+.icono-temporal {
+  font-size: 32px;
+}
+
+.titulo-detalle {
+  color: var(--terracota);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+#itinerario {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#itinerario h2 {
+  color: var(--terracota);
+  margin-bottom: 40px;
+}
+
+.momentos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.momento {
+  max-width: 140px;
+}
+
+.momento .icono-temporal {
+  font-size: 32px;
+}
+
+.nombre-momento {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#confirmacion {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caja-confirmacion,
+.caja-regalo {
+  flex: 1;
+  min-width: 280px;
+  padding: 50px 30px;
+  text-align: center;
+}
+
+.caja-confirmacion {
+  background-color: var(--terracota);
+  color: white;
+}
+
+.caja-regalo {
+  background-color: var(--crema);
+}
+
+.caja-confirmacion h2,
+.caja-regalo h2 {
+  margin-bottom: 16px;
+}
+
+.caja-regalo h2 {
+  color: var(--terracota);
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: white;
+  color: var(--terracota);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--terracota);
+}
+
+.frase-final {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.corazon {
+  font-size: 20px;
+}
+
+.link-mapa {
+  color: var(--texto-oscuro);
+  text-decoration: underline;
+  text-decoration-color: var(--terracota);
+}
