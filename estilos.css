@@ -36,6 +36,22 @@ nav a {
   letter-spacing: 1px;
 }
 
+.logo-circulo {
+  width: 50px;
+  height: 50px;
+  border: 1px dotted white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-iniciales {
+  font-family: "Alex Brush", cursive;
+  font-size: 20px;
+  color: white;
+}
+
 #boton-menu {
   display: none;
   background: none;
@@ -74,27 +90,11 @@ nav a {
   font-style: italic;
 }
 
-.marco-foto {
-  position: relative;
+#hero img {
   max-width: 400px;
   width: 100%;
-  margin: 30px auto 0;
-}
-
-.marco-foto img {
-  width: 100%;
-  display: block;
-  border-radius: 160px 160px 12px 12px;
-  margin-top: 0;
-}
-
-.marco-decorado {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
+  border-radius: 12px;
+  margin-top: 30px;
 }
 
 #countdown {
@@ -298,20 +298,4 @@ footer {
     display: flex;
   }
 
-}
-
-.logo-circulo {
-  width: 50px;
-  height: 50px;
-  border: 1px dotted white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-iniciales {
-  font-family: "Alex Brush", cursive;
-  font-size: 20px;
-  color: white;
 }
