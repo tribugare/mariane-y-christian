@@ -66,6 +66,10 @@ nav a {
   padding: 60px 20px;
 }
 
+.divisor-hero {
+  padding: 0 0 20px;
+}
+
 #hero .eyebrow {
   color: var(--terracota);
   letter-spacing: 3px;
@@ -109,27 +113,6 @@ nav a {
   letter-spacing: 3px;
   font-size: 14px;
   margin-bottom: 20px;
-}
-
-.fila-countdown {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.rama {
-  width: 70px;
-  height: auto;
-  opacity: 0.9;
-}
-
-.rama-izquierda {
-  transform: rotate(-8deg);
-}
-
-.rama-derecha {
-  transform: scaleX(-1) rotate(-8deg);
 }
 
 .cajas-tiempo {
@@ -388,10 +371,6 @@ footer {
     border-left: none;
     border-top: 1px dotted var(--terracota);
     padding-top: 20px;
-  }
-
-  .rama {
-    display: none;
   }
 
   .momento-divisor {
